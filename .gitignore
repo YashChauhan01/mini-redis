@@ -4,3 +4,4 @@ data/
 *.log
 sources.txt
 .DS_Store
+.idea/
