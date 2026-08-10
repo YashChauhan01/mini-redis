@@ -94,7 +94,7 @@ QUIT                         -> +OK, closes connection
 | `--snapshot-interval-ms` | 30000 | full snapshot + WAL compaction interval |
 | `--data-dir` | ./data | where the WAL + snapshot files live |
 
-### Benchmark (proves the scaling claim, doesn't just assert it)
+### Benchmark
 
 ```bash
 java -cp out com.yash.miniredis.client.BenchmarkClient --threads 32 --ops 20000
