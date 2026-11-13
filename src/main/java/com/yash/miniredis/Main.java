@@ -1,3 +1,38 @@
+/*
+ * Problem Statement:
+ *
+ * Design and implement a lightweight, multithreaded,
+ * in-memory key-value database inspired by Redis.
+ *
+ * The system should support multiple concurrent TCP clients
+ * and provide the following capabilities:
+ *
+ * 1. Implement a TCP server capable of handling multiple
+ *    simultaneous client connections.
+ *
+ * 2. Support basic key-value operations such as SET, GET,
+ *    DELETE and EXPIRE through a custom text-based protocol.
+ *
+ * 3. Implement concurrent access using lock striping and
+ *    read-write locks to reduce lock contention.
+ *
+ * 4. Support TTL-based key expiration through lazy expiration
+ *    and a background expiration mechanism.
+ *
+ * 5. Implement approximate LRU-based memory eviction to
+ *    maintain a bounded key capacity.
+ *
+ * 6. Implement persistence through an append-only
+ *    Write-Ahead Log (WAL).
+ *
+ * 7. Support periodic snapshots and WAL replay to restore
+ *    the database state after a restart.
+ *
+ * The implementation should prioritize concurrency,
+ * memory management, and data recovery.
+ */
+
+
 package com.yash.miniredis;
 
 import com.yash.miniredis.eviction.TTLSweeper;
